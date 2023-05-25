@@ -123,33 +123,39 @@ left: 1740px;
 
 /*Segunda pagina: Registro*/
 
+#section-r {
+display: flex;
+flex-direction: row;
+justify-content: end;
+align-items: center;
+margin-top: 190px;
+margin-right: 100px;
+}
+
 #form-r {
-    width: 250px;
-    background-color: black;
-    color: white;
-    padding: 30px;
-    margin-left: auto;
-    margin-top: auto;
-    border-radius: 4px;
-    bottom: 40%;
-    position: absolute;
-    left: 1900px;
-    top: 400px;
-    font-size: 20px;
+background-color: #1B1B1B;
+color: white;
+width: 300px;
+height: 400px;
+border-radius: 20px;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 35px;
+margin: 10px;
+padding: 20px;
 }
 
 #btn-reg {
     text-decoration: none;
+    background-color: #a3592a;
+    border-style: solid;
+    border-color: #a3592a;
     border-radius: 10px;
-    display: inline-block;
-    padding: 20px 15px;
-    background-color: black;
-    border-color: white;
-    color: white;
-    font-size: 30px;
-    position:absolute;
-    top: 260px;
-    left: 22px;
+    font-size: 20px;
+    padding: 5px;
     }
 
 /*Tercera pagina: Inicio sesión*/
