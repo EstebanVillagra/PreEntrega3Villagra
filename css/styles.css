@@ -1,0 +1,474 @@
+/*Caracteristicas generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    size-adjust: 100vh;
+    font-family:Arial, Helvetica, sans-serif;   
+    box-sizing: border-box;
+}
+
+
+/*Primera pagina: Inicio/index*/
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.texto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.img-fondo {
+    background-image: url(../images/microfono.jpg);
+    background-size: 75%;}
+
+.barra  {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#i-s {
+    color: white;
+    font-size: 22px;
+    padding-right: 20px;
+}
+
+#reg {
+    color: white;
+    font-size: 22px;
+    padding-right: 20px;
+}
+
+.logo {
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+text-decoration: none;
+border-radius: 10px;
+display: inline-block;
+padding: 20px 15px;
+background-color: black;
+color: white;
+font-size: 30px;
+position:absolute;
+top: 760px;
+left: 1740px;
+}
+
+#btn-app {
+    background-color:#a3592a;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    }
+
+.div-class {
+    display: block;
+    margin: 20px;
+    padding-left: 1700px;
+    padding-top: 150px;
+    font-size: 50px;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    padding-left: 20px;
+}
+
+/*Segunda pagina: Registro*/
+
+#form-r {
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-left: auto;
+    margin-top: auto;
+    border-radius: 4px;
+    bottom: 40%;
+    position: absolute;
+    left: 1900px;
+    top: 400px;
+    font-size: 20px;
+}
+
+#btn-reg {
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 30px;
+    position:absolute;
+    top: 260px;
+    left: 22px;
+    }
+
+/*Tercera pagina: Inicio sesión*/
+
+body {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,75,9,1) 56%, rgba(255,102,0,1) 100%);
+}
+
+#section-is {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 250px;
+}
+
+.form-sesion {
+    background-color: #1B1B1B;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    gap: 40px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-in { 
+        background-color: #a3592a;
+        color: white;
+        border-radius: 10px;
+        height: 30px;
+        border-style: solid;
+        border-color: #a3592a;
+        padding: 10px;
+        font-size: 20px;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+
+@media (min-width:360px) and (max-height: 640px) {
+
+
+    .barra  {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #i-s {
+        color: white;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    
+    #reg {
+        color: white;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    
+    .logo {
+        color: white;
+        background-color: black;
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 20px;
+        border: none;
+    }
+
+    .footer {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        padding-left: 20px;
+    }
+
+    #btn-app {
+        background-color:#a3592a;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        padding: 15px 15px;
+        text-align: center;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        }
+
+    #section-is {
+        background: #a3592a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    }
+    
+    .form-sesion {
+        background-color: #1B1B1B;
+        border-radius: 15px;
+        color: white;
+        padding: 20px;
+        width: 250px;
+        height: 300px;
+        gap: 30px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-in { 
+            background-color: #a3592a;
+            color: white;
+            border-radius: 10px;
+            height: 30px;
+            border-style: solid;
+            border-color: #a3592a;
+            padding: 10px;
+            font-size: 10px;
+    }
+    
+    .form-input {
+        width: 100%;
+        font-size: 15px;
+        background: none;
+        color: white;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid grey;
+    }
+    
+}
+
+
+/*Cuarta pagina: Mi perfil*/
+
+body{
+    background-color: black;
+    font-size: 25px;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#titulo {
+    color: white;
+    background-color: #1B1B1B;
+    border-style: solid;
+    border-color: #a3592a;
+    border-radius: 20px;
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+    }
+
+#divmain {
+
+    background-color: black; 
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #a3592a;
+    background-color: #1B1B1B;
+    width: 300px;
+    padding: 20px;
+}
+
+#btnclose {
+margin-top: 10px;
+padding: 10px;
+border-style: solid;
+border-color: white;
+background-color: #a3592a;
+color: white;
+border-radius: 15px;
+font-weight: bold;
+font-size: 15px;
+}
+
+#ulsec1 {
+    color: white;
+    margin: 50px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+
+#divs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 20px;
+    padding: 50px;
+    border-style: solid;
+    border-color: #a3592a;
+    color: white;
+    background-color:#1B1B1B;
+    border-radius: 10px; 
+    gap: 20px;
+    position: relative;
+
+}
+
+.divboton {
+
+margin: 10px;
+padding: 10px;
+border-style: solid;
+border-color: white;
+background-color: #a3592a;
+color: white;
+border-radius: 15px;
+font-weight: bold;
+font-size: 15px;
+display: flex;
+}
+
+.span {
+    color: #a3592a;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/*Quinta pagina: Descubrir*/
+
+.main-des {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 15%;
+
+#btn-android {
+        text-decoration: none;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 20px 15px;
+        background-color: grey;
+        border-color: black;
+        color: black;
+        font-size: 30px;
+        position:absolute;
+        top: 700px;
+        left: 600px;
+        }
+    
+#btn-apple {
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px 15px;
+            background-color: grey;
+            border-color: black;
+            color: black;
+            font-size: 30px;
+            position:absolute;
+            top: 800px;
+            left: 600px
+        }
+    
+#art1 {
+            width: 600px;
+            height: 200px;
+            padding-top: 200px;
+            padding-left: 200px;
+            padding-bottom: 200px;
+            padding-right: 200px;
+            font-size: 60px;
+            font-style: oblique;
+        }
+    
+#telefono {
+            width: 600px;
+            height: 1200px;
+        }
+    
+}
+
