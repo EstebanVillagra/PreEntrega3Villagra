@@ -10,7 +10,7 @@
 
 /*Aclaración: para una mejor apreciacion, colocar el zoom del navegador en 75%, a futuro solucionare esto*/
 
-/*Primera pagina: Inicio/index*/
+
 
 h1 {
     color: white;
@@ -18,23 +18,22 @@ h1 {
     padding-left: 20px;
 }
 
-h2 {
-    color: black;
-}
+
+/*Primera pagina: Inicio/index*/
 
 .texto {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.img-fondo {
-    background-image: url(../images/microfono.jpg);
-    background-size: 75%;}
+#fondo {
+    background-color: #a3592a;
+}
 
 .barra  {
     color: white;
     background-color: black;
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,20 +47,20 @@ ul {
 
 #i-s {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     padding-right: 20px;
 }
 
 #reg {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     padding-right: 20px;
 }
 
 .logo {
     color: white;
     background-color: black;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     padding-left: 20px;
     border: none;
@@ -73,26 +72,22 @@ a {
 }
 
 .btn {
-text-decoration: none;
-border-radius: 10px;
-display: inline-block;
-padding: 20px 15px;
 background-color: black;
-color: white;
+border-style: solid;
+border-color: black;
+border-radius: 10px;
 font-size: 30px;
-position:absolute;
-top: 760px;
-left: 1740px;
+padding: 10px;
 }
 
 #btn-app {
     background-color:#a3592a;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
-    padding: 20px 20px;
+    font-size: 15px;
+    padding: 15px 15px;
     text-align: center;
-    height: 50px;
+    height: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,19 +95,34 @@ left: 1740px;
     font-weight: bold;
     }
 
+#section-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
 .div-class {
-    display: block;
-    margin: 20px;
-    padding-left: 1700px;
-    padding-top: 150px;
-    font-size: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-right: 80px;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    gap: 20px;
+    font-size: 40px;
 }
 
 .footer {
     color: white;
     background-color: black;
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,6 +130,10 @@ left: 1740px;
     position: fixed;
     bottom: 0px;
     padding-left: 20px;
+}
+
+#main1 {
+    margin-top: 50px;
 }
 
 /*Segunda pagina: Registro*/
@@ -161,7 +175,7 @@ padding: 20px;
 
 /*Tercera pagina: Inicio sesión*/
 
-body {
+.body {
     background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,75,9,1) 56%, rgba(255,102,0,1) 100%);
 }
