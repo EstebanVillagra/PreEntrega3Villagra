@@ -1,0 +1,17 @@
+/*Pagina: Inicio Sesion*/
+
+.btn-in { 
+    background-color: #a3592a;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    border-style: solid;
+    border-color: #a3592a;
+    padding: 10px;
+    font-size: 20px;
+
+    &:hover {
+        background-color: #eda464;
+        border-color: #eda464;}
+}
+

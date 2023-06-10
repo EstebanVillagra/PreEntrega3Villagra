@@ -1,0 +1,53 @@
+/*Quinta pagina: Descubrir*/
+
+.main-des {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 15%;
+
+#btn-android {
+        text-decoration: none;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 20px 15px;
+        background-color: grey;
+        border-color: black;
+        color: black;
+        font-size: 30px;
+        position:absolute;
+        top: 700px;
+        left: 600px;
+        }
+    
+#btn-apple {
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px 15px;
+            background-color: grey;
+            border-color: black;
+            color: black;
+            font-size: 30px;
+            position:absolute;
+            top: 800px;
+            left: 600px
+        }
+    
+#art1 {
+            width: 600px;
+            height: 200px;
+            padding-top: 200px;
+            padding-left: 200px;
+            padding-bottom: 200px;
+            padding-right: 200px;
+            font-size: 60px;
+            font-style: oblique;
+        }
+    
+#telefono {
+            width: 600px;
+            height: 1200px;
+        }
+    
+}
