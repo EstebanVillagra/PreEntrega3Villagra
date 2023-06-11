@@ -119,8 +119,33 @@ a {
   padding-left: 20px;
 }
 
+.footer2 {
+  color: grey;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0px;
+  padding-left: 20px;
+  font-size: 1rem;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.divfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  margin-right: 10px;
+  color: grey;
+}
+
 #fondo {
-  background-color: #A56238;
+  background-color: black;
 }
 
 #btnindex {
@@ -151,6 +176,7 @@ a {
 #main1 {
   display: grid;
   grid-template-columns: 50% 50%;
+  row-gap: 40px;
 }
 
 #sectionindex1 {
@@ -173,11 +199,50 @@ a {
   gap: 20px;
   color: white;
   font-size: 40px;
+  object-fit: cover;
 }
 
 #main1 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 50%);
+}
+
+#sectionindex3 {
+  background: linear-gradient(black, #a3592a);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #1B1B1B;
+  color: rgb(216, 211, 211);
+  border-style: solid;
+  border-color: #1B1B1B;
+  border-radius: 2rem;
+  padding: 30px;
+  margin: 60px;
+  width: 600px;
+  height: auto;
+  list-style-type: "👍";
+  font-size: 20px;
+  gap: 10px;
+}
+
+.btnpg {
+  padding: 10px;
+  border-style: solid;
+  border-color: #a3592a;
+  background-color: #a3592a;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /*Segunda pagina: Registro*/

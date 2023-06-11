@@ -11,3 +11,28 @@
     bottom: 0px;
     padding-left: 20px;
 }
+
+.footer2 {
+    color: grey;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    padding-left: 20px;
+    font-size: 1rem;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.divfooter {
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 5px;
+margin-right: 10px;
+color: grey;
+}
