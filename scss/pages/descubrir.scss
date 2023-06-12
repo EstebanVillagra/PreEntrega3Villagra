@@ -1,53 +1,63 @@
 /*Quinta pagina: Descubrir*/
 
-.main-des {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 15%;
+.container1des {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin: 50px;
 
-#btn-android {
-        text-decoration: none;
-        border-radius: 10px;
-        display: inline-block;
-        padding: 20px 15px;
-        background-color: grey;
-        border-color: black;
-        color: black;
-        font-size: 30px;
-        position:absolute;
-        top: 700px;
-        left: 600px;
+        #telefono {
+            width: 750px;
+            object-fit: cover;
+        }
+
+        .botonesapp {
+            width: 220px;
+            margin-left: 150px;
+            border: 1px solid $color-primario2;
+            border-radius: 20px;
+            background-color: black;
+            font-size: 20px;
+            padding: 5px;
         }
     
-#btn-apple {
-            text-decoration: none;
-            border-radius: 10px;
-            display: inline-block;
-            padding: 20px 15px;
-            background-color: grey;
-            border-color: black;
-            color: black;
-            font-size: 30px;
-            position:absolute;
-            top: 800px;
-            left: 600px
+        #div1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 15px;
         }
-    
-#art1 {
-            width: 600px;
-            height: 200px;
-            padding-top: 200px;
-            padding-left: 200px;
-            padding-bottom: 200px;
-            padding-right: 200px;
-            font-size: 60px;
-            font-style: oblique;
+        
+        .texto1 {
+            color: white;
+            font-size: 4rem;
+            text-align: start;
+            margin-left: 150px;
+            height: 320px;
+            width: 500px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
         }
-    
-#telefono {
-            width: 600px;
-            height: 1200px;
+        .texto2 {
+            font-size: 2rem;
+            color: $color-primario2;
+            margin-left: 118px;
+            font-weight: bold;
+            width: 700px;
         }
-    
-}
+
+        .texto3 {
+            color: grey;
+            margin-top: 12px;
+            margin-left: 155px;
+            font-size: 20px;
+        }
+
+        #div2 { 
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+    }
