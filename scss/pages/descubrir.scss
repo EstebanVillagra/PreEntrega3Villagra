@@ -7,9 +7,10 @@
     margin: 50px;
 
         #telefono {
-            width: 750px;
-            object-fit: cover;
+            width: 670px;
             transform: rotate(10deg);
+            animation-name: rotar;
+            animation-duration: 2s;
         }
 
         .botonesapp {
@@ -20,6 +21,9 @@
             background-color: black;
             font-size: 20px;
             padding: 5px;
+                &:hover {background-color: $color-primario2;
+                        transition: 500ms;
+                        transform: scale(1.1);}
         }
     
         #div1 {
@@ -28,6 +32,9 @@
             justify-content: center;
             align-content: center;
             gap: 15px;
+            animation-name: desplazar-left;
+            animation-duration: 1500ms;
+            animation-direction: alternate-reverse;
         }
         
         .texto1 {
@@ -63,3 +70,4 @@
         }
 
     }
+

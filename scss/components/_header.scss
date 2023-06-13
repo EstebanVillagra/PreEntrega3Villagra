@@ -1,12 +1,4 @@
 
-#span1 {
-    color: white;
-
-#span2 {
-        color: black;
-    }
-}
-
 .barra  {
     background-color: black;
     width: 100%;
@@ -24,16 +16,27 @@
     font-weight: bold;
     padding-left: 20px;
     border: none;
+    &:hover {color: $color-secundario1;
+        transform: scale(1.2);
+        transition-duration: 500ms;
+        }
 }
 
 #i-s {
     color: white;
     font-size: 18px;
     padding-right: 20px;
-}
+    
+    &:hover {color: $color-secundario1;
+            transform: scale(1.2);
+            transition-duration: 500ms;}}
 
 #reg {
     color: white;
     font-size: 18px;
     padding-right: 20px;
+
+    &:hover {color: $color-secundario1;
+        transform: scale(1.2);
+        transition-duration: 500ms;}
 }

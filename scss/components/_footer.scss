@@ -21,12 +21,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     bottom: 0px;
     padding-left: 20px;
     font-size: 1rem;
     gap: 10px;
     list-style-type: none;
-    position: relative;
 }
 
 .divfooter {
