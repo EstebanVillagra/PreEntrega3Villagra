@@ -24,14 +24,13 @@
     }
     
     #btn-reg {
-        background-color: #a3592a;
+        background-color: $color-primario2;
         text-decoration: none;
         color: white;
         border-radius: 20px;
         padding: .5rem 1rem;
         display: inline-block;
         font-size: 1rem;
-        margin: 0px;
     
-        &:hover {background-color: #eda464;}
+        &:hover {background-color: $color-secundario1;}
         } 

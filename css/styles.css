@@ -8,7 +8,7 @@
 }
 
 h1 {
-  color: white;
+  color: #a3592a;
   font-size: 40px;
   padding-left: 20px;
 }
@@ -47,8 +47,14 @@ a {
   border-color: #eda464;
 }
 
-.barra {
+#span1 {
   color: white;
+}
+#span1 #span2 {
+  color: black;
+}
+
+.barra {
   background-color: black;
   width: 100%;
   height: 50px;
@@ -60,7 +66,6 @@ a {
 }
 
 .logo {
-  color: white;
   background-color: black;
   font-size: 30px;
   font-weight: bold;
@@ -156,7 +161,9 @@ a {
   border-radius: 10px;
   font-size: 30px;
   padding: 15px;
-  display: flex;
+}
+#btnindex:hover {
+  background-color: #a3592a;
 }
 
 #btn-app {
@@ -179,19 +186,16 @@ a {
   grid-template-columns: 50% 50%;
   row-gap: 40px;
 }
-
-#sectionindex1 {
+#main1 #sectionindex1 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-
-#sectionindex2 {
+#main1 #sectionindex2 {
   background-color: #1B1B1B;
 }
-
-#div2index {
+#main1 #div2index {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,21 +206,18 @@ a {
   font-size: 40px;
   object-fit: cover;
 }
-
-#main1 {
+#main1 #main1 {
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-
-#sectionindex3 {
+#main1 #sectionindex3 {
   background: linear-gradient(black, #a3592a);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
 }
-
-.tarjeta {
+#main1 .tarjeta {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -234,8 +235,7 @@ a {
   font-size: 20px;
   gap: 10px;
 }
-
-.btnpg {
+#main1 .btnpg {
   padding: 10px;
   border-style: solid;
   border-color: #a3592a;
@@ -278,10 +278,9 @@ a {
   padding: 0.5rem 1rem;
   display: inline-block;
   font-size: 1rem;
-  margin: 0px;
 }
 #btn-reg:hover {
-  background-color: #eda464;
+  background-color: #fc8c44;
 }
 
 /*Tercera pagina: Inicio sesión*/
@@ -373,16 +372,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .btn-in {
-    background-color: #a3592a;
-    color: white;
-    border-radius: 10px;
-    height: 30px;
-    border-style: solid;
-    border-color: #a3592a;
-    padding: 10px;
-    font-size: 10px;
-  }
   .form-input {
     width: 100%;
     font-size: 15px;
@@ -393,6 +382,20 @@ a {
     border-bottom: 1px solid grey;
   }
 }
+.btn-in {
+  background-color: #a3592a;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  border-style: solid;
+  border-color: #a3592a;
+  padding: 10px;
+  font-size: 1rem;
+}
+.btn-in:hover {
+  background-color: #fc8c44;
+}
+
 /*Cuarta pagina: Mi perfil*/
 body {
   background-color: black;
@@ -498,6 +501,7 @@ body {
 .container1des #telefono {
   width: 750px;
   object-fit: cover;
+  transform: rotate(10deg);
 }
 .container1des .botonesapp {
   width: 220px;
@@ -520,16 +524,17 @@ body {
   font-size: 4rem;
   text-align: start;
   margin-left: 150px;
-  height: 320px;
-  width: 500px;
+  height: auto;
+  width: auto;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .container1des .texto2 {
   font-size: 2rem;
   color: #a3592a;
-  margin-left: 118px;
+  margin-left: 150px;
   font-weight: bold;
-  width: 700px;
+  width: auto;
+  text-align: start;
 }
 .container1des .texto3 {
   color: grey;

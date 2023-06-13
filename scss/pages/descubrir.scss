@@ -9,6 +9,7 @@
         #telefono {
             width: 750px;
             object-fit: cover;
+            transform: rotate(10deg);
         }
 
         .botonesapp {
@@ -34,17 +35,18 @@
             font-size: 4rem;
             text-align: start;
             margin-left: 150px;
-            height: 320px;
-            width: 500px;
+            height: auto;
+            width: auto;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
         }
         .texto2 {
             font-size: 2rem;
             color: $color-primario2;
-            margin-left: 118px;
+            margin-left: 150px;
             font-weight: bold;
-            width: 700px;
+            width: auto;
+            text-align: start;
         }
 
         .texto3 {

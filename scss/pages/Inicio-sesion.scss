@@ -99,16 +99,6 @@
         align-items: center;
     }
     
-    .btn-in { 
-            background-color: #a3592a;
-            color: white;
-            border-radius: 10px;
-            height: 30px;
-            border-style: solid;
-            border-color: #a3592a;
-            padding: 10px;
-            font-size: 10px;
-    }
     
     .form-input {
         width: 100%;
@@ -120,4 +110,17 @@
         border-bottom: 1px solid grey;
     }
     
-}
+    }
+
+    .btn-in { 
+        background-color: $color-primario2;
+        color: white;
+        border-radius: 10px;
+        height: 30px;
+        border-style: solid;
+        border-color: $color-primario2;
+        padding: 10px;
+        font-size: 1rem;
+
+        &:hover {background-color: $color-secundario1;}
+    }
