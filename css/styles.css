@@ -9,7 +9,7 @@
 
 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   padding-left: 20px;
 }
 
@@ -158,12 +158,26 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   bottom: 0px;
   padding-left: 20px;
   font-size: 1rem;
-  gap: 10px;
   list-style-type: none;
+}
+
+.footer3 {
+  color: grey;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0px;
+  padding-left: 20px;
+  font-size: 1rem;
+  list-style-type: none;
+  position: fixed;
 }
 
 .divfooter {
@@ -422,11 +436,11 @@ a {
   box-shadow: 5px 5px 5px black;
 }
 #form-r:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: 500ms;
+  box-shadow: 0 0 0 10px #a3592a;
 }
-
-#btn-reg {
+#form-r #btn-reg {
   background-color: #a3592a;
   text-decoration: none;
   color: white;
@@ -436,7 +450,7 @@ a {
   font-display: 0px;
   font-size: 1rem;
 }
-#btn-reg:hover {
+#form-r #btn-reg:hover {
   background-color: #fc8c44;
   transform: scale(1.4);
   transition: 500ms;
