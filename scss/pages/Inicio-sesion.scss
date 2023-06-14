@@ -74,27 +74,26 @@
         }
 
     #section-is {
-        background: #a3592a;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 100px;
     }
     
     .form-sesion {
-        background-color: #1B1B1B;
+        background-color: $color-primario1;
         border-radius: 15px;
         color: white;
-        padding: 20px;
-        width: 250px;
-        height: 300px;
-        gap: 30px;
-        font-size: 15px;
+        padding: 30px;
+        width: 300px;
+        height: 400px;
+        gap: 40px;
+        font-size: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 70px;
     }
     
     
