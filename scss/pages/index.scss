@@ -120,12 +120,29 @@ padding: 15px;
 
 /*Vista mobil*/
 
-@media (min-width:360px) and (max-height:640px) {
+@media (min-width:320px) and (max-height:640px) {
 
-    h1 {
-        font-size: 30px;
-        padding-left: 10px;
+    .barra  {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+        margin-left: 5px;
+        margin-bottom: 5px;
     }
+    
+    .btn-navbar {
+        color: white;
+        font-size: 18px;
+        padding-right: 20px;
+        
+        &:hover {color: $color-secundario1;
+                transform: scale(1.2);
+                transition-duration: 500ms;}}
 
     #fondo {
         background-color: black;
@@ -244,5 +261,4 @@ padding: 15px;
                 position: relative;
             }
     }
-
 }
