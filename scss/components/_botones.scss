@@ -1,6 +1,6 @@
 /*Pagina: Inicio Sesion*/
 
-.btn-in { 
+.btn-in {
     background-color: $color-primario2;
     color: white;
     border-radius: 10px;
@@ -13,6 +13,39 @@
     &:hover {
         background-color: $color-secundario1;
         border-color: $color-secundario1;
-        transition: 500ms;}
+        transition: 500ms;
+    }
 }
 
+.botonTarjetaIndex {
+    padding: 5px;
+    border-style: solid;
+    border-color: $color-primario2;
+    background-color: $color-primario2;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+
+    &:hover {
+        background-color: $color-secundario1;
+        border-color: $color-secundario1;
+    }
+}
+
+
+#btn-app {
+    background-color: $color-primario2;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding: 15px 15px;
+    text-align: center;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
