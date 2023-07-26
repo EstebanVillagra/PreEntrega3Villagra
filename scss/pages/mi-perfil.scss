@@ -1,6 +1,6 @@
 /*Cuarta pagina: Mi perfil*/
 
-body{
+body {
     background-color: black;
     font-size: 25px;
 }
@@ -23,11 +23,11 @@ body{
     width: 300px;
     padding: 5px;
     text-align: center;
-    }
+}
 
 #divmain {
 
-    background-color: black; 
+    background-color: black;
     color: white;
     border-style: solid;
     border-radius: 10px;
@@ -38,15 +38,15 @@ body{
 }
 
 #btnclose {
-margin-top: 10px;
-padding: 10px;
-border-style: solid;
-border-color: white;
-background-color: #a3592a;
-color: white;
-border-radius: 15px;
-font-weight: bold;
-font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    background-color: #a3592a;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 #ulsec1 {
@@ -72,8 +72,8 @@ font-size: 15px;
     border-style: solid;
     border-color: #a3592a;
     color: white;
-    background-color:#1B1B1B;
-    border-radius: 10px; 
+    background-color: #1B1B1B;
+    border-radius: 10px;
     gap: 20px;
     position: relative;
 
@@ -81,16 +81,16 @@ font-size: 15px;
 
 .divboton {
 
-margin: 10px;
-padding: 10px;
-border-style: solid;
-border-color: white;
-background-color: #a3592a;
-color: white;
-border-radius: 15px;
-font-weight: bold;
-font-size: 15px;
-display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    background-color: #a3592a;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
 }
 
 .span {

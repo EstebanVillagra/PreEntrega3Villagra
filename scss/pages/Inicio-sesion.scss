@@ -11,7 +11,7 @@
 @media (min-width:360px) and (max-height: 640px) {
 
 
-    .barra  {
+    .barra {
         background-color: black;
         width: 100%;
         height: auto;
@@ -23,16 +23,19 @@
         padding-left: 5px;
         margin-bottom: 5px;
     }
-    
+
     .btn-navbar {
         color: white;
         font-size: 18px;
         padding-right: 20px;
-        
-        &:hover {color: $color-secundario1;
-                transform: scale(1.2);
-                transition-duration: 500ms;}}
-    
+
+        &:hover {
+            color: $color-secundario1;
+            transform: scale(1.2);
+            transition-duration: 500ms;
+        }
+    }
+
     .logo {
         color: white;
         background-color: black;
@@ -57,7 +60,7 @@
     }
 
     #btn-app {
-        background-color:#a3592a;
+        background-color: #a3592a;
         border-radius: 10px;
         color: white;
         font-size: 15px;
@@ -69,7 +72,7 @@
         justify-content: center;
         align-items: center;
         font-weight: bold;
-        }
+    }
 
     #section-is {
         display: flex;
@@ -78,7 +81,7 @@
         align-items: center;
         margin-bottom: 100px;
     }
-    
+
     .form-sesion {
         background-color: $color-primario1;
         border-radius: 15px;
@@ -94,8 +97,8 @@
         align-items: center;
         margin-top: 70px;
     }
-    
-    
+
+
     .form-input {
         width: 100%;
         font-size: 15px;
@@ -105,18 +108,20 @@
         outline: none;
         border-bottom: 1px solid grey;
     }
-    
-    }
 
-    .btn-in { 
-        background-color: $color-primario2;
-        color: white;
-        border-radius: 10px;
-        height: 30px;
-        border-style: solid;
-        border-color: $color-primario2;
-        padding: 10px;
-        font-size: 1rem;
+}
 
-        &:hover {background-color: $color-secundario1;}
+.btn-in {
+    background-color: $color-primario2;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    border-style: solid;
+    border-color: $color-primario2;
+    padding: 10px;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: $color-secundario1;
     }
+}

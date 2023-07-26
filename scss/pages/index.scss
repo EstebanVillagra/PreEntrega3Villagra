@@ -4,10 +4,16 @@
 
 .textoPromocional {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: inset 10px white;
+    padding: 10px;
+    text-shadow: 3px 3px black;
 }
 
 .textoDescriptivoPromocion {
     font-size: 25px;
+    text-decoration: blink;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px black;
 }
 
 .botonUniteAhora {
@@ -27,69 +33,58 @@
     }
 }
 
-.mainIndex {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    row-gap: 40px;
+.primeraSeccionIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/microfono.jpg);
+    background-repeat: repeat;
+    
+}
 
+.divPrimeraSeccionIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 100px;
+    gap: 30px;
+    color: white;
+    font-size: 50px;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
 
-    .primeraSeccionIndex {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
+.segundaSeccionIndex {
+    background: linear-gradient(black, $color-primario2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    .segundaSeccionIndex {
-        background-color: #1B1B1B;
-    }
+.tarjetaIndex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: $color-primario1;
+    color: rgb(216, 211, 211);
+    border-style: solid;
+    border-color: $color-primario1;
+    border-radius: 2rem;
+    padding: 30px;
+    margin: 60px;
+    width: auto;
+    height: auto;
+    list-style-type: "\1F44D";
+    font-size: 20px;
+    gap: 10px;
 
-    .divSegundaSeccionIndex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        margin: 50px;
-        gap: 30px;
-        color: white;
-        font-size: 35px;
-        object-fit: cover;
-        width: auto;
-        height: auto;
-    }
-
-    .terceraSeccionIndex {
-        background: linear-gradient(black, $color-primario2);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        width: auto;
-        height: auto;
-    }
-
-    .tarjetaIndex {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        background-color: $color-primario1;
-        color: rgb(216, 211, 211);
-        border-style: solid;
-        border-color: $color-primario1;
-        border-radius: 2rem;
-        padding: 30px;
-        margin: 60px;
-        width: auto;
-        height: auto;
-        list-style-type: "\1F44D";
-        font-size: 20px;
-        gap: 10px;
-
-        &:hover {
-            transform: scale(1.2);
-            transition-duration: 1s;
-        }
+    &:hover {
+        transform: scale(1.2);
+        transition-duration: 1s;
     }
 }
 
@@ -110,28 +105,18 @@
         margin-bottom: 5px;
     }
 
-    .mainIndex {
-        display: flex;
-        flex-wrap: wrap;
-        width: 320px;
-        height: auto;
-    }
-
-    .imagenIndex {
-        display: none;
-    }
-
-    .divSegundaSeccionIndex {
+    .primeraSeccionIndex {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
-        margin: 50px;
-        gap: 30px;
-        color: white;
-        font-size: 90px;
-        object-fit: cover;
-        width: auto;
-        height: auto;
+        align-items: center;
+        background-color: black;
+    }
+
+    .segundaSeccionIndex {
+        background: linear-gradient(black, $color-primario2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

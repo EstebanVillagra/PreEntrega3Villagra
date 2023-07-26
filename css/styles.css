@@ -214,10 +214,16 @@ a {
 
 .textoPromocional {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: inset 10px white;
+  padding: 10px;
+  text-shadow: 3px 3px black;
 }
 
 .textoDescriptivoPromocion {
   font-size: 25px;
+  text-decoration: blink;
+  text-decoration-line: underline;
+  text-shadow: 2px 2px black;
 }
 
 .botonUniteAhora {
@@ -236,43 +242,37 @@ a {
   transition-duration: 500ms;
 }
 
-.mainIndex {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  row-gap: 40px;
-}
-.mainIndex .primeraSeccionIndex {
+.primeraSeccionIndex {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../../images/microfono.jpg);
+  background-repeat: repeat;
 }
-.mainIndex .segundaSeccionIndex {
-  background-color: #1B1B1B;
-}
-.mainIndex .divSegundaSeccionIndex {
+
+.divPrimeraSeccionIndex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin: 50px;
+  margin: 100px;
   gap: 30px;
   color: white;
-  font-size: 35px;
+  font-size: 50px;
   object-fit: cover;
   width: auto;
   height: auto;
 }
-.mainIndex .terceraSeccionIndex {
+
+.segundaSeccionIndex {
   background: linear-gradient(black, #a3592a);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
-  width: auto;
-  height: auto;
 }
-.mainIndex .tarjetaIndex {
+
+.tarjetaIndex {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -290,7 +290,7 @@ a {
   font-size: 20px;
   gap: 10px;
 }
-.mainIndex .tarjetaIndex:hover {
+.tarjetaIndex:hover {
   transform: scale(1.2);
   transition-duration: 1s;
 }
@@ -309,27 +309,18 @@ a {
     margin-left: 5px;
     margin-bottom: 5px;
   }
-  .mainIndex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 320px;
-    height: auto;
-  }
-  .imagenIndex {
-    display: none;
-  }
-  .divSegundaSeccionIndex {
+  .primeraSeccionIndex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    margin: 50px;
-    gap: 30px;
-    color: white;
-    font-size: 90px;
-    object-fit: cover;
-    width: auto;
-    height: auto;
+    align-items: center;
+    background-color: black;
+  }
+  .segundaSeccionIndex {
+    background: linear-gradient(black, #a3592a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 /*Segunda pagina: Registro*/
