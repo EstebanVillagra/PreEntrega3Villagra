@@ -1,6 +1,6 @@
 /*Quinta pagina: Descubrir*/
 
-.primeraSeccionPage5{
+.primeraSeccionPage5 {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -9,7 +9,7 @@
     gap: 20px;
 }
 
-.segundaSeccionPage5{
+.segundaSeccionPage5 {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -18,7 +18,7 @@
     gap: 20px;
 }
 
-.tarjetaPage5{
+.tarjetaPage5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@
     color: white;
     text-align: center;
 
-    &:hover{
+    &:hover {
         transform: scale(1.1);
         transition-duration: 500ms;
         background-color: $color-primario1;
@@ -53,28 +53,7 @@
 
 @media (min-width:320px) and (max-height:720px) {
 
-    .navbar {
-        background-color: black;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        gap: 10px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-    }
-
-    .logo {
-        background-color: black;
-        font-size: 30px;
-        font-weight: bold;
-        padding-left: 2px;
-        border: none;
-}
-
-    .segundaSeccionPage5{
+    .segundaSeccionPage5 {
         justify-content: center;
         align-items: center;
         display: flex;

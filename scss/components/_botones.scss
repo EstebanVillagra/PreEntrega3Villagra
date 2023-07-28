@@ -78,7 +78,7 @@
     font-weight: bold;
     font-size: 15px;
 
-    &:hover{
+    &:hover {
         background-color: red;
         transform: scale(1.1);
         transition: 500ms;
@@ -96,10 +96,9 @@
     font-size: 15px;
     display: flex;
 
-    &:hover{
+    &:hover {
         background-color: $color-secundario1;
         transform: scale(1.1);
         transition: 400ms;
     }
 }
-
