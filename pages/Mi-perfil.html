@@ -15,12 +15,12 @@
 
 <body class="body">
 
-    <header class="barra">
+    <header class="navbar">
 
         <a href="../index.html" class="logo">SoundVibe</a>
 
         <nav>
-            <ul class="barra">
+            <ul class="navbar">
                 <li><a href="./Inicio-sesion.html" class="btn-navbar">Iniciar sesión</a></li>
                 <li><a href="./registro.html" class="btn-navbar">Registrarme</a></li>
                 <li><a href="./descubrir.html" class="btn-navbar">App</a></li>
@@ -29,16 +29,16 @@
 
     </header>
 
-    <section id="section1">
+    <section class="sectionMiPerfil">
 
-        <span id="titulo">Bienvenido "Usuario"</span>
+        <h1 class="tituloMiPerfil">Hola Steve!</h1>
 
-        <div id="divmain">
+        <div class="indiceMiPerfil">
             <ul>
-                <li><a href="#datos-personales">Datos personales</a></li>
-                <li><a href="#suscripcion">Suscripción</a></li>
-                <li><a href="#dispositivos">Dispositivos vinculados</a></li>
-                <button id="btnclose"><a href="../index.html">Cerrar sesión</button>
+                <li><a href="#datos-personales" class="atajosIndice">Datos personales</a></li>
+                <li><a href="#suscripcion" class="atajosIndice">Suscripción</a></li>
+                <li><a href="#dispositivos" class="atajosIndice">Dispositivos vinculados</a></li>
+                <a href="../index.html" class="botonCerrarSesion">Cerrar sesión</a>
             </ul>
         </div>
 
@@ -46,9 +46,9 @@
 
     <section>
 
-        <div id="divs">
+        <div class="inputMiPerfil">
 
-            <span id="datos-personales" class="span">Datos personales</span>
+            <span id="datos-personales" class="tituloInput">Datos personales</span>
             <form action="">
                 <label for="">Nombre de usuario:</label>
                 <input type="text">
@@ -61,37 +61,60 @@
                 <label for="">Correo electronico:</label>
                 <input type="email">
             </form>
-            <button class="divboton">Confirmar información</button>
+            <a href="" class="botonInputMiPerfil">Confirmar informacion</a>
 
         </div>
 
-        <div id="divs">
+        <div class="inputMiPerfil">
 
-            <span id="suscripcion" class="span">Suscripción</span>
+            <span id="suscripcion" class="tituloInput">Suscripción</span>
             <span>Suscripción actual: Premium</span>
             <form action="">
                 <label for="">Metodo de pago:</label>
                 <input type="id">
             </form>
             <span><span>Se renueva en: 13/5/2023</span></span>
-            <button class="divboton">Confirmar información</button>
+            <a href="" class="botonInputMiPerfil">Confirmar informacion</a>
         </div>
 
-        <div id="divs">
+        <div class="inputMiPerfil">
 
-            <span id="dispositivos" class="span">Dispositivos vinculados</span>
+            <span id="dispositivos" class="tituloInput">Dispositivos vinculados</span>
             <p>Administra los dispositivos que pueden descargar y escuchar tu contenido (hasta 5 dispositivos)</p>
             <ol>
-                <li>Motorola moto g60s</li> <button class="divboton">Eliminiar dispositivo</button>
-                <li>DESKTOP-8Q9G1AP</li> <button class="divboton">Eliminar dispositivo</button>
+                <li>Motorola moto g60s</li><a href="" class="botonInputMiPerfil">Eliminar dispositivo</a>
+                <li>DESKTOP-8Q9G1AP</li><a href="" class="botonInputMiPerfil">Eliminar dispositivo</a>
             </ol>
 
         </div>
 
-
-
     </section>
 
+    <footer class="footer">
+
+        <div>
+            <ul class="divfooter">Cuenta:
+                <li><a href="./pages/Inicio-sesion.html">Iniciar Sesión</a></li>
+                <li><a href="./pages/registro.html">Registrarse</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+            <ul class="divfooter">Descubre la app:
+                <li><a href="https://play.google.com/store/apps?hl=es_AR&gl=US" target="_blank">Para Android</a></li>
+                <li><a href="https://www.apple.com/la/app-store/" target="_blank">Para iOS</a></li>
+            </ul>
+        </div>
+
+        <div>
+
+            <ul class="divfooter">Designed by:
+                <li><a href="https://www.instagram.com/_estebanvillagra/" target="_blank">@Steve</a></li>
+            </ul>
+        </div>
+
+    </footer>
 </body>
 
 </html>

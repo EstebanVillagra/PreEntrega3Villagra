@@ -36,19 +36,51 @@ a {
   }
 }
 /*Pagina: Inicio Sesion*/
-.btn-in {
+.botonUniteAhora {
+  display: inline-block;
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 15px;
+}
+.botonUniteAhora:hover {
+  background-color: #a3592a;
+  border-color: #a3592a;
+  transform: scale(0.8);
+  transition-duration: 500ms;
+}
+
+.botonFormularioInicioSesion {
   background-color: #a3592a;
   color: white;
   border-radius: 10px;
-  height: 30px;
+  height: auto;
   border-style: solid;
   border-color: #a3592a;
   padding: 10px;
   font-size: 20px;
 }
-.btn-in:hover {
+.botonFormularioInicioSesion:hover {
   background-color: #fc8c44;
   border-color: #fc8c44;
+  transition: 500ms;
+}
+
+.botonFormularioRegistro {
+  background-color: #a3592a;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-display: 0px;
+  font-size: 1rem;
+}
+.botonFormularioRegistro:hover {
+  background-color: #fc8c44;
+  transform: scale(1.4);
   transition: 500ms;
 }
 
@@ -68,19 +100,36 @@ a {
   border-color: #fc8c44;
 }
 
-#btn-app {
+.botonCerrarSesion {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
   background-color: #a3592a;
-  border-radius: 10px;
   color: white;
-  font-size: 15px;
-  padding: 15px 15px;
-  text-align: center;
-  height: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  border-radius: 15px;
   font-weight: bold;
+  font-size: 15px;
+}
+.botonCerrarSesion:hover {
+  background-color: red;
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.botonInputMiPerfil {
+  margin: 10px;
+  padding: 10px;
+  background-color: #a3592a;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+}
+.botonInputMiPerfil:hover {
+  background-color: #fc8c44;
+  transform: scale(1.1);
+  transition: 400ms;
 }
 
 .navbar {
@@ -118,14 +167,15 @@ a {
   transition-duration: 500ms;
 }
 
-.form-sesion {
+.formularioInicioSesion {
   background-color: #1B1B1B;
-  border-radius: 15px;
+  border-radius: 30px;
   color: white;
-  padding: 20px;
-  margin-top: 160px;
-  width: 400px;
-  height: 400px;
+  padding: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
   gap: 40px;
   font-size: 25px;
   display: flex;
@@ -133,7 +183,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.form-sesion:hover {
+.formularioInicioSesion:hover {
   transform: scale(1.2);
   transition: 500ms;
   box-shadow: 0 0 0 10px #a3592a;
@@ -149,6 +199,26 @@ a {
   border-bottom: 1px solid grey;
 }
 
+.formularioRegistro {
+  background-color: #1B1B1B;
+  color: white;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 20px;
+}
+.formularioRegistro:hover {
+  transform: scale(1.2);
+  transition: 500ms;
+  box-shadow: 0 0 0 10px #a3592a;
+}
+
 .footer {
   color: grey;
   background-color: black;
@@ -158,11 +228,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  bottom: 0px;
-  padding-left: 20px;
+  padding: 20px;
   font-size: 1rem;
   list-style-type: none;
   margin-top: auto;
+  bottom: 0px;
 }
 
 .divfooter {
@@ -173,6 +243,29 @@ a {
   margin-right: 10px;
   color: grey;
   padding: 10px;
+  font-size: 15px;
+}
+
+/*Estuve mucho tiempo intentando lograr que el footer quedase abajo de todo en todas las pages, 
+pero si ponia la propiedad fixed, en las pages que tuviesen scroll el footer quedaria flotando y tapando contenido, mientras 
+que en las pages con poco contenido funcionaba. Debe haber una solucion a esto adecuada, pero para 
+ahorrar tiempo decidi hacer este footer aparte con las mismas propiedades sumando la propiedad fixed para colocarlo
+en pages con poco contenido, que serian las de Inicio Sesion y Registro.*/
+.footerX {
+  color: grey;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1rem;
+  list-style-type: none;
+  margin-top: auto;
+  bottom: 0px;
+  position: fixed;
 }
 
 .fondoIndex {
@@ -197,22 +290,6 @@ a {
   text-decoration: blink;
   text-decoration-line: underline;
   text-shadow: 2px 2px black;
-}
-
-.botonUniteAhora {
-  display: inline-block;
-  background-color: black;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-  font-size: 30px;
-  padding: 15px;
-}
-.botonUniteAhora:hover {
-  background-color: #a3592a;
-  border-color: #a3592a;
-  transform: scale(0.8);
-  transition-duration: 500ms;
 }
 
 .primeraSeccionIndex {
@@ -269,7 +346,7 @@ a {
 }
 
 /*Vista mobil*/
-@media (min-width: 320px) and (max-height: 640px) {
+@media (min-width: 320px) and (max-height: 720px) {
   .navbar {
     background-color: black;
     width: 100%;
@@ -287,7 +364,25 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+  }
+  .divPrimeraSeccionIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    gap: 15px;
+    color: white;
+    font-size: 35px;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+  }
+  .textoDescriptivoPromocion {
+    font-size: 30px;
+    text-decoration: blink;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px black;
   }
   .segundaSeccionIndex {
     background: linear-gradient(black, #a3592a);
@@ -295,105 +390,32 @@ a {
     flex-direction: column;
     justify-content: center;
   }
+  .textoDescriptivoPromocion {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: blink;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px black;
+  }
+  .tituloPrincipal {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2px;
+  }
 }
 /*Segunda pagina: Registro*/
-#section-r {
+.sectionRegistro {
+  height: 100vh;
+  width: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#form-r {
-  background-color: #1B1B1B;
-  color: white;
-  width: 400px;
-  height: auto;
-  border-radius: 20px;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 35px;
-  margin-top: 160px;
-  padding: 20px;
-  box-shadow: 5px 5px 5px black;
-}
-#form-r:hover {
-  transform: scale(1.2);
-  transition: 500ms;
-  box-shadow: 0 0 0 10px #a3592a;
-}
-#form-r #btn-reg {
-  background-color: #a3592a;
-  text-decoration: none;
-  color: white;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  display: block;
-  font-display: 0px;
-  font-size: 1rem;
-}
-#form-r #btn-reg:hover {
-  background-color: #fc8c44;
-  transform: scale(1.4);
-  transition: 500ms;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 320px) and (max-height: 640px) {
-  #section-r {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  #form-r {
-    background-color: #1B1B1B;
-    color: white;
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    margin-top: 50px;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
-  }
-  #form-r:hover {
-    transform: scale(1.2);
-    transition: 500ms;
-    box-shadow: 0 0 0 10px #a3592a;
-  }
-  #form-r #btn-reg {
-    background-color: #a3592a;
-    text-decoration: none;
-    color: white;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    display: block;
-    font-display: 0px;
-    font-size: 1rem;
-  }
-  #form-r #btn-reg:hover {
-    background-color: #fc8c44;
-    transform: scale(1.4);
-    transition: 500ms;
-  }
-}
-/*Tercera pagina: Inicio sesión*/
-#section-is {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 360px) and (max-height: 640px) {
-  .barra {
+@media (min-width: 320px) and (max-height: 720px) {
+  .navbar {
     background-color: black;
     width: 100%;
     height: auto;
@@ -405,15 +427,62 @@ a {
     padding-left: 5px;
     margin-bottom: 5px;
   }
-  .btn-navbar {
+  .logo {
     color: white;
-    font-size: 18px;
-    padding-right: 20px;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 5px;
+    border: none;
   }
-  .btn-navbar:hover {
-    color: #fc8c44;
-    transform: scale(1.2);
-    transition-duration: 500ms;
+  .sectionRegistro {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formularioRegistro {
+    background-color: #1B1B1B;
+    color: white;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px;
+    margin: 40px;
+  }
+}
+/*Tercera pagina: Inicio sesión*/
+.sectionInicioSesion {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 320px) and (max-height: 720px) {
+  .navbar {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    padding-left: 5px;
+    margin-bottom: 5px;
   }
   .logo {
     color: white;
@@ -423,54 +492,30 @@ a {
     padding-left: 5px;
     border: none;
   }
-  .footer {
-    color: white;
-    background-color: black;
-    width: 100%;
-    height: 50px;
+  .sectionInicioSesion {
+    height: auto;
+    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0px;
-    padding-left: 20px;
-  }
-  #btn-app {
-    background-color: #a3592a;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
-    padding: 15px 15px;
-    text-align: center;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    margin: 50px;
+    padding: 50px;
   }
-  #section-is {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  .form-sesion {
+  .formularioInicioSesion {
     background-color: #1B1B1B;
-    border-radius: 15px;
+    border-radius: 30px;
     color: white;
-    padding: 30px;
-    width: 300px;
-    height: 400px;
-    gap: 40px;
-    font-size: 25px;
+    padding: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 300px;
+    gap: 20px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
   }
   .form-input {
     width: 100%;
@@ -482,27 +527,13 @@ a {
     border-bottom: 1px solid grey;
   }
 }
-.btn-in {
-  background-color: #a3592a;
-  color: white;
-  border-radius: 10px;
-  height: 30px;
-  border-style: solid;
-  border-color: #a3592a;
-  padding: 10px;
-  font-size: 1rem;
-}
-.btn-in:hover {
-  background-color: #fc8c44;
-}
-
 /*Cuarta pagina: Mi perfil*/
 body {
   background-color: black;
   font-size: 25px;
 }
 
-#section1 {
+.sectionMiPerfil {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -511,81 +542,59 @@ body {
   margin-top: 10px;
 }
 
-#titulo {
+.tituloMiPerfil {
   color: white;
   background-color: #1B1B1B;
-  border-style: solid;
-  border-color: #a3592a;
   border-radius: 20px;
   width: 300px;
   padding: 5px;
   text-align: center;
+  font-size: 2rem;
 }
 
-#divmain {
-  background-color: black;
-  color: white;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #a3592a;
+.indiceMiPerfil {
   background-color: #1B1B1B;
+  color: white;
+  border: solid #1B1B1B;
+  border-radius: 20px;
   width: 300px;
   padding: 20px;
+  gap: 50px;
+  font-size: 20px;
+}
+.indiceMiPerfil:hover {
+  background-color: black;
+  transition: 500ms;
+  border-color: black;
 }
 
-#btnclose {
-  margin-top: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-color: white;
+.atajosIndice:hover {
   background-color: #a3592a;
   color: white;
-  border-radius: 15px;
-  font-weight: bold;
-  font-size: 15px;
+  transition: 400ms;
+  margin: 12px;
+  padding: 3px;
 }
 
-#ulsec1 {
-  color: white;
-  margin: 50px;
-  margin-left: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 10px;
-}
-
-#divs {
+.inputMiPerfil {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   margin: 20px;
   padding: 50px;
-  border-style: solid;
-  border-color: #a3592a;
   color: white;
   background-color: #1B1B1B;
   border-radius: 10px;
   gap: 20px;
   position: relative;
 }
-
-.divboton {
-  margin: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-color: white;
-  background-color: #a3592a;
-  color: white;
-  border-radius: 15px;
-  font-weight: bold;
-  font-size: 15px;
-  display: flex;
+.inputMiPerfil:hover {
+  background-color: black;
+  transition: 500ms;
 }
 
-.span {
+.tituloInput {
   color: #a3592a;
   font-size: 40px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -616,7 +625,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: #1B1B1B;
+  background-color: black;
   padding: 40px;
   gap: 40px;
   color: white;
@@ -625,6 +634,7 @@ body {
 .tarjetaPage5:hover {
   transform: scale(1.1);
   transition-duration: 500ms;
+  background-color: #1B1B1B;
 }
 
 .iconoTarjeta {
@@ -641,7 +651,7 @@ body {
   text-shadow: 2px 2px black;
 }
 
-@media (min-width: 320px) and (max-height: 640px) {
+@media (min-width: 320px) and (max-height: 720px) {
   .navbar {
     background-color: black;
     width: 100%;
@@ -654,6 +664,13 @@ body {
     margin-left: 5px;
     margin-bottom: 5px;
   }
+  .logo {
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 2px;
+    border: none;
+  }
   .segundaSeccionPage5 {
     justify-content: center;
     align-items: center;
@@ -661,6 +678,16 @@ body {
     flex-direction: column;
     padding: 30px;
     gap: 20px;
+  }
+  .tituloSeparador {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px black;
   }
 }
 

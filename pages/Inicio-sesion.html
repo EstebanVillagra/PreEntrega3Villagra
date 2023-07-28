@@ -10,18 +10,18 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="description" content="Ingresa a tu cuenta para modificar tu perfil y no perderte ninguna novedad">
-    <title>Ingresa a tu cuenta</title>
+    <title>SoundVibe - Inicio Sesión</title>
 
 </head>
 
 <body class="body">
 
-    <header class="barra">
+    <header class="navbar">
 
         <a href="../index.html" class="logo">SoundVibe</a>
 
         <nav>
-            <ul class="barra">
+            <ul class="navbar">
                 <li><a href="../pages/registro.html" class="btn-navbar">Registrarme</a></li>
                 <li><a href="../pages/descubrir.html" class="btn-navbar">App</a></li>
                 <li><a href="../pages/Mi-perfil.html" class="btn-navbar">Mi perfil</a></li>
@@ -32,9 +32,9 @@
 
     <main>
 
-        <section id="section-is">
+        <section class="sectionInicioSesion">
 
-            <Div class="form-sesion">
+            <Div class="formularioInicioSesion">
                 <h1>Iniciar sesión</h1>
                 <form action="usuario">
                     <label for=""></label>
@@ -48,7 +48,7 @@
                     <label for=""></label>
                     <input id="checkbox" type="checkbox">Recordar dispositivo
                 </form>
-                <Button><a href="../pages/Mi-perfil.html" class="btn-in">Continuar</a></Button>
+                <a href="../pages/Mi-perfil.html" class="botonFormularioInicioSesion">Continuar</a>
             </Div>
 
 
@@ -57,8 +57,31 @@
     </main>
 
     <footer class="footer">
-        <button id="btn-app"><a href="./descubrir.html">Descarga la app!</a></button>
+
+        <div>
+            <ul class="divfooter">Cuenta:
+                <li><a href="./pages/Inicio-sesion.html">Iniciar Sesión</a></li>
+                <li><a href="./pages/registro.html">Registrarse</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+            <ul class="divfooter">Descubre la app:
+                <li><a href="https://play.google.com/store/apps?hl=es_AR&gl=US" target="_blank">Para Android</a></li>
+                <li><a href="https://www.apple.com/la/app-store/" target="_blank">Para iOS</a></li>
+            </ul>
+        </div>
+
+        <div>
+
+            <ul class="divfooter">Designed by:
+                <li><a href="https://www.instagram.com/_estebanvillagra/" target="_blank">@Steve</a></li>
+            </ul>
+        </div>
+
     </footer>
+
 </body>
 
 </html>
